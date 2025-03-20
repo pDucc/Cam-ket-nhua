@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fffbea;
+    font-family: 'Lexend', sans-serif;
+    line-height: normal;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Akira-Expanded';
+    src: url('/fonts/1FTV-Akira-Expanded.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-size: 20px;
+}
+
+.bg-141414 {
+    background-color: #141414;
+}
+
+.logo {
+    max-height: 84px;
+}
+
+.item-hero-section {
+    font-size: 64px;
+    line-height: 64px;
+    color: #f47722;
+    font-family: 'Akira-Expanded', serif;
+}
+
+.oi-hero-section {
+    font-family: 'Akira-Expanded', serif;
+    color: #f47722;
+    font-size: 300px;
+}
+
+.oi-regular {
+    font-family: 'Akira-Expanded', serif;
+    color: #f47722;
+    font-size: 32px;
+}
+
+.container-padding {
+    padding: 64px 10%;
+}
+/* --------------------- */
+
+/* --------------------- */
+.navbar {
+    margin-top: 12px;
+    padding: 0 12px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #141414;
+    border-radius: 20px;
+    padding: 16px;
+    gap: 16px;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.BOOKING-nav {
+    background-color: #f47722;
+}
+
+.BOOKING-nav:hover {
+    font-weight: 700;
+    transform: scale(1.1);
+}
+
+.navbar li:hover {
+    background-color: #fffbea;
+    color: #f47722;
+}
+
+.banner {
+    padding-top: 84px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    background-color: #fffbea;
+    background-image: url(img/MATERIALS/Asset\ 7@100x-8-orange.png);
+}
+
+.hero-section {
+    margin-bottom: 32px;
+}
+
+.act-button,
+.act-button p {
+    color: #141414;
+    transition: all 0.3s;
+}
+
+.act-button {
+    padding: 16px 32px;
+    background-color: #fffbea;
+}
+
+.act-button-item {
+    width: 56px;
+}
+/* ---------------------- */
+
+.container-2 {
+    top: 100vh;
+    position: relative;
+    z-index: 10;
+    background-image: url(img/image-9df82b03-38b7-4e76-b172-8afd26f6dba2.jpg);
+}
+
+.about-us {
+    width: 100%;
+    display: flex;
+    z-index: 10;
+    border-top: 4px #f47722 solid;
+}
+
+.about-us img {
+    width: 500px;
+}
+
+.about-us-content {
+    background-color: #141414;
+    padding: 64px;
+    border-radius: 40px;
+}
+
+/* ----------- */
+/* Colors */
+
+/* ---------- */
+
+.div-border {
+    border-radius: 20px;
+    border: solid 2px #141414;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 64px;
+}
+
+.div1 img {
+    border-radius: 20px;
+    border: solid 2px #141414;
+    width: 100%;
+}
+
+.div1 {
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+    grid-column-start: 4;
+}
+/* ---- */
+
+.stage {
+    height: 180vh;
+}
+
+.wrapper {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+}
+
+.ds {
+    top: 10%;
+    position: absolute;
+    transform-origin: bottom left;
+    width: 45%;
+    padding: 32px;
+    border-radius: 20px;
+    border: 1px solid #141414;
+    display: flex;
+    gap: 16px;
+}
+
+.ds p,
+h3 {
+    color: #141414;
+}
+
+.stage-h3 {
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom: 1px #141414 solid;
+    padding-bottom: 16px;
+}
+
+.ds img {
+    width: 300px;
+    border-radius: 12px;
+}
+
+#d1 {
+    background-color: #f47722;
+    transform: rotate(15deg);
+    box-shadow: 4px 4px 0px #141414;
+
+    z-index: 1;
+}
+#d2 {
+    background-color: #d7222a;
+    transform: rotate(5deg);
+    box-shadow: 4px 4px 0px #141414;
+
+    z-index: 2;
+}
+#d4 {
+    background-color: #e2c12c;
+    transform: rotate(-5deg);
+    box-shadow: 4px 4px 0px #141414;
+
+    z-index: 4;
+}
+/* ------------ */
+.stock-ticker li span {
+    color: #fffbea;
+}
+/* Reset CSS */
+
+.stock-ticker {
+    font-size: 64px;
+    overflow: hidden;
+    user-select: none;
+    --gap: 64px;
+    display: flex;
+    background-color: #f47722;
+    height: auto;
+}
+
+.stock-ticker ul {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    padding: 2.5%;
+    background-color: #f47722;
+    animation: scroll 20s linear infinite;
+    border-top: 2px solid #141414;
+    border-bottom: 2px solid #141414;
+}
+
+.stock-ticker:hover ul {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+.stock-ticker .company {
+    font-weight: bold;
+}
+/* --------------- */
+
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden; /* Ẩn phần ảnh bị tràn ra ngoài */
+    background-image: url(img/image-9df82b03-38b7-4e76-b172-8afd26f6dba2.jpg);
+    position: relative;
+    height: 100vh;
+}
+
+.footer-des,
+.footer-des2 {
+    width: 50%;
+    padding: 20px;
+}
+
+.footer-des {
+    background-color: transparent; /* Nền trong suốt */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px;
+    padding-top: 10%;
+}
+
+.footer-des2 {
+    background-color: #141414; /* Nền màu đen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon {
+    max-width: 100px;
+    border: 1px solid #141414;
+    border-radius: 1000px;
+}
+
+.bg-decoration {
+    position: absolute; /* Cố định ảnh bên trong footer */
+    bottom: -10%; /* Đặt ở mép dưới cùng */
+    left: -10%; /* Canh trái */
+    width: 60%; /* Trải rộng toàn bộ footer */
+    opacity: 0.8; /* Làm mờ nhẹ để không lấn át nội dung */
+    z-index: 1; /* Đảm bảo nằm dưới tất cả các phần tử khác */
+}
+
+.social-button {
+    border: 2px solid #141414;
+    background: #f47722;
+    box-shadow: 4px 4px 0px #141414;
+    transition: all 0.3s ease;
+}
+
+.social-button:hover {
+    transform: translate(2px, 2px);
+    background: #1ac2ff;
+    box-shadow: 2px 2px 0px #141414;
+}
+
+.social-button span {
+    color: #141414;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    background: #f47722;
+}
+/* --------------- */
+.card {
+    width: 400px;
+    height: 100%;
+    translate: -6px -6px;
+    background: #f47722;
+    border: 3px solid #000000;
+    box-shadow: 12px 12px 0 #000000;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.head {
+    font-weight: 900;
+    width: 100%;
+    background: #fffbea;
+    padding: 5px 12px;
+    color: #000000;
+    border-bottom: 3px solid #000000;
+}
+
+.content {
+    padding: 8px 12px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px;
+    height: auto;
+}
+
+.button {
+    padding: 10px 15px;
+    border: 3px solid #000000;
+    box-shadow: 3px 3px 0 #000000;
+    font-weight: 750;
+    background: #fffbea;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #000000;
+    font-size: 18px;
+}
+
+.button:hover {
+    translate: 1.5px 1.5px;
+    box-shadow: 1.5px 1.5px 0 #000000;
+    background: #1ac2ff;
+}
+
+.button:active {
+    translate: 3px 3px;
+    box-shadow: 0 0 0 #000000;
+}
+
+.card:hover {
+    translate: -6px;
+}
+/* ----------------- */
+.button-54 {
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #fffbea;
+    cursor: pointer;
+    border: 3px solid;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    padding: 8px 12px;
+    color: #141414;
+}
+
+.button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
