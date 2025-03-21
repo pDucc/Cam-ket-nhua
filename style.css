@@ -66,33 +66,31 @@ p {
     width: auto;
     display: flex;
     justify-content: center;
-    background-color: #141414;
+    background-color: #fffbea;
     border-radius: 20px;
     padding: 16px;
     gap: 16px;
+    border: 2px solid #141414;
 }
 
 .navbar li {
     list-style: none;
     padding: 8px 16px;
-    border-radius: 10px;
-    transition: all 0.5s;
-}
-
-.BOOKING-nav {
-    background-color: #f47722;
-}
-
-.BOOKING-nav:hover {
-    font-weight: 700;
-    transform: scale(1.1);
+    transition: all 0.2s;
+    color: #141414;
+    border: 1px solid #fffbea;
 }
 
 .navbar li:hover {
-    background-color: #fffbea;
-    color: #f47722;
+    background-color: #f47722;
+    color: #fffbea;
+    border: 1px solid #141414;
 }
 
+.navbar li:active {
+    scale: 0.9;
+}
+/* ------------------- */
 .banner {
     padding-top: 84px;
     width: 100%;
@@ -103,8 +101,7 @@ p {
     justify-content: center;
     position: fixed;
     z-index: 1;
-    background-color: #fffbea;
-    background-image: url(img/MATERIALS/Asset\ 7@100x-8-orange.png);
+    background-color: #31439b;
 }
 
 .hero-section {
@@ -138,7 +135,6 @@ p {
     width: 100%;
     display: flex;
     z-index: 10;
-    border-top: 4px #f47722 solid;
 }
 
 .about-us img {
@@ -146,9 +142,10 @@ p {
 }
 
 .about-us-content {
-    background-color: #141414;
-    padding: 64px;
+    background-color: #f47722;
+    padding: 48px;
     border-radius: 40px;
+    border: 2px solid #141414;
 }
 
 /* ----------- */
@@ -320,10 +317,11 @@ h3 {
 }
 
 .footer-des2 {
-    background-color: #141414; /* Nền màu đen */
+    background-color: #f47722; /* Nền màu đen */
     display: flex;
     align-items: center;
     justify-content: center;
+    border-left: 2px solid #141414;
 }
 
 .contact-icon {
@@ -419,7 +417,8 @@ h3 {
     translate: -6px;
 }
 /* ----------------- */
-.button-54 {
+.button-54,
+iframe {
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
