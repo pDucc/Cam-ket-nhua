@@ -15,20 +15,6 @@
 }
 
 /* ------------mobile----------- */
-@media (max-width: 768px) {
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: white;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    #main-content {
-        display: none;
-    }
-}
 
 p {
     font-size: 20px;
@@ -460,3 +446,17 @@ iframe {
     padding: 0;
 }
 /* ------------- */
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #main-content {
+        display: none;
+    }
+}
